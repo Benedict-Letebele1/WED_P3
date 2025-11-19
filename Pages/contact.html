@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <title>Contact Klip & Crust Bakery | Visit Us in Polokwane</title>
+  <meta name="description" content="Contact Klip & Crust Bakery in Polokwane. Visit our location, send us a message, or place custom orders. We're here to serve you fresh artisan baked goods.">
+  <meta name="keywords" content="Klip & Crust contact, bakery Polokwane, custom cake orders, bakery hours, contact bakery">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Leaflet CSS for Maps -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">Klip <span>&</span> Crust</div>
+    <div class="menu-toggle">&#9776;</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Pages/menu.html">Menu</a></li>
+        <li><a href="../Pages/gallery.html">Gallery</a></li>
+        <li><a href="../Pages/about.html">About Us</a></li>
+        <li><a href="../Pages/contact.html" class="active">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTACT PAGE HERO -->
+  <section class="page-hero contact-hero">
+    <div class="hero-content">
+      <h1>Get in Touch</h1>
+      <p>We'd love to hear from you. Visit our bakery, give us a call, or send us a message.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT TYPE SELECTION -->
+  <section class="contact-type-selector">
+    <div class="container">
+      <h2>How Can We Help You?</h2>
+      <div class="contact-tabs">
+        <button class="contact-tab-btn active" data-tab="general">General Inquiry</button>
+        <button class="contact-tab-btn" data-tab="catering">Catering & Events</button>
+        <button class="contact-tab-btn" data-tab="custom">Custom Orders</button>
+        <button class="contact-tab-btn" data-tab="feedback">Feedback</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTAINER -->
+  <section class="contact-container">
+    <div class="container">
+      <div class="contact-content">
+        
+        <!-- CONTACT FORMS -->
+        <div class="contact-forms">
+          
+          <!-- General Inquiry Form -->
+          <div id="general" class="contact-form active">
+            <h2>General Inquiry</h2>
+            <form class="enquiry-form" data-type="general">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                <span class="error-message name-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                <span class="error-message email-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+27 XXX XXX XXXX">
+                <span class="error-message phone-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+                <span class="error-message subject-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="6" placeholder="Please describe your inquiry in detail..." required></textarea>
+                <span class="error-message message-error"></span>
+              </div>
+
+              <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Catering & Events Form -->
+          <div id="catering" class="contact-form">
+            <h2>Catering & Events</h2>
+            <form class="enquiry-form" data-type="catering">
+              <div class="form-group">
+                <label for="catering-name">Full Name *</label>
+                <input type="text" id="catering-name" name="name" placeholder="Your full name" required>
+                <span class="error-message name-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="catering-email">Email Address *</label>
+                <input type="email" id="catering-email" name="email" placeholder="your.email@example.com" required>
+                <span class="error-message email-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="catering-phone">Phone Number *</label>
+                <input type="tel" id="catering-phone" name="phone" placeholder="+27 XXX XXX XXXX" required>
+                <span class="error-message phone-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="event-type">Event Type *</label>
+                <select id="event-type" name="event_type" required>
+                  <option value="">Select Event Type</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="corporate">Corporate Event</option>
+                  <option value="birthday">Birthday Party</option>
+                  <option value="anniversary">Anniversary</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="error-message event-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="event-date">Event Date</label>
+                <input type="date" id="event-date" name="event_date">
+              </div>
+
+              <div class="form-group">
+                <label for="guest-count">Number of Guests</label>
+                <input type="number" id="guest-count" name="guest_count" min="10" max="500" placeholder="Approximate number">
+              </div>
+
+              <div class="form-group">
+                <label for="catering-message">Event Details *</label>
+                <textarea id="catering-message" name="message" rows="5" placeholder="Tell us about your event and catering needs..." required></textarea>
+                <span class="error-message message-error"></span>
+              </div>
+
+              <button type="submit" class="btn primary-btn submit-btn">Request Catering Quote</button>
+            </form>
+          </div>
+
+          <!-- Custom Orders Form -->
+          <div id="custom" class="contact-form">
+            <h2>Custom Orders</h2>
+            <form class="enquiry-form" data-type="custom">
+              <div class="form-group">
+                <label for="custom-name">Full Name *</label>
+                <input type="text" id="custom-name" name="name" placeholder="Your full name" required>
+                <span class="error-message name-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="custom-email">Email Address *</label>
+                <input type="email" id="custom-email" name="email" placeholder="your.email@example.com" required>
+                <span class="error-message email-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="custom-phone">Phone Number *</label>
+                <input type="tel" id="custom-phone" name="phone" placeholder="+27 XXX XXX XXXX" required>
+                <span class="error-message phone-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="order-type">Order Type *</label>
+                <select id="order-type" name="order_type" required>
+                  <option value="">Select Order Type</option>
+                  <option value="custom-cake">Custom Cake</option>
+                  <option value="special-pastries">Special Pastries</option>
+                  <option value="dietary-restrictions">Dietary Restrictions</option>
+                  <option value="large-quantity">Large Quantity Order</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="error-message order-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="delivery-date">Required Date</label>
+                <input type="date" id="delivery-date" name="delivery_date">
+              </div>
+
+              <div class="form-group">
+                <label for="custom-message">Order Details *</label>
+                <textarea id="custom-message" name="message" rows="6" placeholder="Please describe your custom order requirements..." required></textarea>
+                <span class="error-message message-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="file-upload-label">
+                  <input type="file" name="reference_images" multiple accept="image/*">
+                  Upload Reference Images (Optional)
+                </label>
+              </div>
+
+              <button type="submit" class="btn primary-btn submit-btn">Submit Custom Order Request</button>
+            </form>
+          </div>
+
+          <!-- Feedback Form -->
+          <div id="feedback" class="contact-form">
+            <h2>Share Your Feedback</h2>
+            <form class="enquiry-form" data-type="feedback">
+              <div class="form-group">
+                <label for="feedback-name">Your Name</label>
+                <input type="text" id="feedback-name" name="name" placeholder="Your name (optional)">
+              </div>
+
+              <div class="form-group">
+                <label for="feedback-email">Email Address</label>
+                <input type="email" id="feedback-email" name="email" placeholder="your.email@example.com (optional)">
+              </div>
+
+              <div class="form-group">
+                <label>Rating</label>
+                <div class="rating-input">
+                  <span class="rating-star" data-rating="1">⭐</span>
+                  <span class="rating-star" data-rating="2">⭐</span>
+                  <span class="rating-star" data-rating="3">⭐</span>
+                  <span class="rating-star" data-rating="4">⭐</span>
+                  <span class="rating-star" data-rating="5">⭐</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="visit-date">Date of Visit (Optional)</label>
+                <input type="date" id="visit-date" name="visit_date">
+              </div>
+
+              <div class="form-group">
+                <label for="feedback-type">Feedback Type</label>
+                <select id="feedback-type" name="feedback_type">
+                  <option value="">Select Type</option>
+                  <option value="compliment">Compliment</option>
+                  <option value="suggestion">Suggestion</option>
+                  <option value="concern">Concern</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="feedback-message">Your Feedback *</label>
+                <textarea id="feedback-message" name="message" rows="6" placeholder="Please share your experience and suggestions..." required></textarea>
+                <span class="error-message message-error"></span>
+              </div>
+
+              <button type="submit" class="btn primary-btn submit-btn">Submit Feedback</button>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- CONTACT INFORMATION -->
+        <div class="contact-info-sidebar">
+          <div class="contact-info-card">
+            <h2>Visit Our Bakery</h2>
+            
+            <div class="contact-method">
+              <div class="contact-icon">📍</div>
+              <div class="contact-details">
+                <h3>Address</h3>
+                <p>123 Bakery Lane<br>Polokwane, South Africa</p>
+                <button class="btn secondary-btn get-directions-btn">Get Directions</button>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon">📞</div>
+              <div class="contact-details">
+                <h3>Phone</h3>
+                <p>+27 12 345 6789</p>
+                <small>Call us during business hours</small>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <p>info@klipcrust.co.za</p>
+                <small>We respond within 24 hours</small>
+              </div>
+            </div>
+
+            <div class="business-hours">
+              <h3>Opening Hours</h3>
+              <div class="hours-item">
+                <span>Monday - Friday</span>
+                <span>7:00 AM - 6:00 PM</span>
+              </div>
+              <div class="hours-item">
+                <span>Saturday</span>
+                <span>7:00 AM - 4:00 PM</span>
+              </div>
+              <div class="hours-item">
+                <span>Sunday</span>
+                <span>8:00 AM - 2:00 PM</span>
+              </div>
+            </div>
+
+            <div class="social-contact">
+              <h3>Connect With Us</h3>
+              <div class="social-links">
+                <a href="#" class="social-btn facebook-btn">
+                  <span class="social-icon">📘</span>
+                  Facebook
+                </a>
+                <a href="#" class="social-btn instagram-btn">
+                  <span class="social-icon">📷</span>
+                  Instagram
+                </a>
+                <a href="https://wa.me/27123456789" class="social-btn whatsapp-btn">
+                  <span class="social-icon">💬</span>
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE MAP SECTION -->
+  <section class="map-section">
+    <div class="container">
+      <h2>Find Us in Polokwane</h2>
+      <div id="contact-map" style="height: 500px; width: 100%;"></div>
+    </div>
+  </section>
+
+  <!-- FAQ QUICK LINKS -->
+  <section class="faq-quick-links">
+    <div class="container">
+      <h2>Quick Answers</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Do you take phone orders?</h3>
+          <p>Yes! Call us during business hours to place orders for pickup.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How far in advance for custom cakes?</h3>
+          <p>We recommend ordering custom cakes at least 3-5 days in advance.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you deliver?</h3>
+          <p>We offer local delivery for orders over R200 within Polokwane.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Allergy information?</h3>
+          <p>We can accommodate many dietary needs. Please ask about specific allergies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Come taste the difference at Klip & Crust Bakery!</h2>
+      <p>Visit us today for fresh artisan baked goods made with love and local ingredients.</p>
+      <div class="cta-buttons">
+        <a href="menu.html" class="btn primary-btn">View Our Menu</a>
+        <a href="gallery.html" class="btn secondary-btn">See Our Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Klip & Crust Bakery</h3>
+        <p>Fresh artisan baked goods made daily in Polokwane</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+          <a href="#" class="social-link facebook">Facebook</a>
+          <a href="#" class="social-link instagram">Instagram</a>
+          <a href="#" class="social-link whatsapp">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Klip & Crust Bakery | Follow us on 
+        <a href="#">Facebook</a> | <a href="#">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- SUCCESS MESSAGE MODAL -->
+  <div class="form-success-message" style="display: none;">
+    <div class="success-icon">✅</div>
+    <h3>Message Sent Successfully!</h3>
+    <p>Thank you for contacting Klip & Crust Bakery. We'll get back to you within 24 hours.</p>
+    <button class="btn primary-btn close-success-btn">Close</button>
+  </div>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/Assets/index.js"></script>
+
+</body>
+</html>

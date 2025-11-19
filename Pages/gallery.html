@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <title>Gallery | Klip & Crust Bakery - Artisan Breads & Pastries</title>
+  <meta name="description" content="Explore our gallery of artisan baked goods from Klip & Crust Bakery in Polokwane. Fresh breads, pastries, cakes, and our beautiful bakery interior.">
+  <meta name="keywords" content="bakery gallery, artisan bread photos, pastry images, cake gallery, Klip & Crust bakery photos">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">Klip <span>&</span> Crust</div>
+    <div class="menu-toggle">&#9776;</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Pages/menu.html">Menu</a></li>
+        <li><a href="../Pages/gallery.html" class="active">Gallery</a></li>
+        <li><a href="../Pages/about.html">About Us</a></li>
+        <li><a href="../Pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- GALLERY HERO -->
+  <section class="page-hero gallery-hero">
+    <div class="hero-content">
+      <h1>Our Delicious Creations</h1>
+      <p>Explore our collection of artisan baked goods, from fresh breads to celebration cakes</p>
+    </div>
+  </section>
+
+  <!-- GALLERY FILTERS -->
+  <section class="gallery-filters">
+    <div class="container">
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">All Items</button>
+        <button class="filter-btn" data-filter="bread">Breads</button>
+        <button class="filter-btn" data-filter="pastries">Pastries</button>
+        <button class="filter-btn" data-filter="cakes">Cakes</button>
+        <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+        <button class="filter-btn" data-filter="custom">Custom Orders</button>
+      </div>
+      <div class="gallery-search">
+        <input type="text" class="search-gallery-input" placeholder="Search gallery...">
+        <button class="search-gallery-btn">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY STATS -->
+  <section class="gallery-stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Baked Goods</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">6</div>
+          <div class="stat-label">Categories</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Handcrafted</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY GRID -->
+  <section class="gallery-container">
+    <div class="container">
+      <div class="gallery-grid">
+        
+        <!-- Bread Category -->
+        <div class="gallery-item" data-category="bread" data-tags="artisan sourdough fresh">
+          <div class="gallery-img-container">
+            <img src="/Assets/images/Croissant.jpg" alt="Fresh buttery croissants from Klip & Crust Bakery" width="100%" height="100%" class="gallery-image">
+            <div class="gallery-overlay">
+              <button class="view-image-btn">View Larger</button>
+              <button class="add-to-cart-btn" data-product="croissant">Add to Cart</button>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3>Fresh Croissants</h3>
+            <p>Buttery, flaky croissants baked fresh every morning</p>
+            <div class="gallery-meta">
+              <span class="category-tag bread-tag">Breads</span>
+              <span class="price">R28</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="bread" data-tags="artisan sourdough fresh">
+          <div class="gallery-img-container">
+            <img src="/Assets/images/Bread1.jpg" alt="Artisan sourdough bread with crispy crust" width="100%" height="100%" class="gallery-image">
+            <div class="gallery-overlay">
+              <button class="view-image-btn">View Larger</button>
+              <button class="add-to-cart-btn" data-product="sourdough">Add to Cart</button>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3>Artisan Sourdough</h3>
+            <p>Traditional sourdough with perfect crust and airy crumb</p>
+            <div class="gallery-meta">
+              <span class="category-tag bread-tag">Breads</span>
+              <span class="price">R42</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cakes Category -->
+        <div class="gallery-item" data-category="cakes" data-tags="chocolate celebration">
+          <div class="gallery-img-container">
+            <img src="/Assets/images/Chocolate cake.jpg" alt="Decadent chocolate celebration cake" width="100%" height="100%" class="gallery-image">
+            <div class="gallery-overlay">
+              <button class="view-image-btn">View Larger</button>
+              <button class="add-to-cart-btn" data-product="chocolate-cake">Add to Cart</button>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3>Chocolate Celebration Cake</h3>
+            <p>Rich chocolate cake perfect for special occasions</p>
+            <div class="gallery-meta">
+              <span class="category-tag cakes-tag">Cakes</span>
+              <span class="price">R280</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bakery Interior -->
+        <div class="gallery-item" data-category="interior" data-tags="bakery shop">
+          <div class="gallery-img-container">
+            <img src="/Assets/images/interior.jpg" alt="Warm and inviting Klip & Crust Bakery interior" width="100%" height="100%" class="gallery-image">
+            <div class="gallery-overlay">
+              <button class="view-image-btn">View Larger</button>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3>Our Bakery Interior</h3>
+            <p>Warm and inviting atmosphere where we bake with love</p>
+            <div class="gallery-meta">
+              <span class="category-tag interior-tag">Bakery</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pastries Category -->
+        <div class="gallery-item" data-category="pastries" data-tags="muffins seasonal">
+          <div class="gallery-img-container">
+            <img src="/Assets/images/muffins1.jpg" alt="Seasonal fruit muffins with fresh berries" width="100%" height="100%" class="gallery-image">
+            <div class="gallery-overlay">
+              <button class="view-image-btn">View Larger</button>
+              <button class="add-to-cart-btn" data-product="blueberry-muffin">Add to Cart</button>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3>Seasonal Muffins</h3>
+            <p>Fresh fruit muffins made with seasonal local ingredients</p>
+            <div class="gallery-meta">
+              <span class="category-tag pastries-tag">Pastries</span>
+              <span class="price">R45</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Orders Category -->
+        <div class="gallery-item" data-category="custom" data-tags="wedding celebration">
+          <div class="gallery-img-container">
+            <img src="/Assets/images/wedding cake.jpg" alt="Elegant custom wedding cake design" width="100%" height="100%" class="gallery-image">
+            <div class="gallery-overlay">
+              <button class="view-image-btn">View Larger</button>
+              <button class="custom-order-btn" data-product="wedding-cake">Custom Order</button>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3>Wedding Cakes</h3>
+            <p>Elegant custom wedding cakes designed for your special day</p>
+            <div class="gallery-meta">
+              <span class="category-tag custom-tag">Custom Orders</span>
+              <span class="price">From R800</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Gallery Items -->
+        <div class="gallery-item" data-category="bread" data-tags="baguette french">
+          <div class="gallery-img-container">
+            <img src="/Assets/images/Baguette.jpg" alt="Traditional French baguette with crispy crust" width="100%" height="100%" class="gallery-image">
+            <div class="gallery-overlay">
+              <button class="view-image-btn">View Larger</button>
+              <button class="add-to-cart-btn" data-product="baguette">Add to Cart</button>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3>French Baguette</h3>
+            <p>Traditional baguette with perfect crisp crust and soft interior</p>
+            <div class="gallery-meta">
+              <span class="category-tag bread-tag">Breads</span>
+              <span class="price">R35</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="cakes" data-tags="red velvet classic">
+          <div class="gallery-img-container">
+            <img src="/Assets/images/Red velvet cake.jpg" alt="Classic red velvet cake with cream cheese frosting" width="100%" height="100%" class="gallery-image">
+            <div class="gallery-overlay">
+              <button class="view-image-btn">View Larger</button>
+              <button class="add-to-cart-btn" data-product="red-velvet">Add to Cart</button>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3>Red Velvet Cake</h3>
+            <p>Classic red velvet with rich cream cheese frosting</p>
+            <div class="gallery-meta">
+              <span class="category-tag cakes-tag">Cakes</span>
+              <span class="price">R320</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="seasonal" data-tags="holiday special">
+          <div class="gallery-img-container">
+            <img src="/Assets/images/Seasonal pastry.jpg" alt="Special holiday pastry selection" width="100%" height="100%" class="gallery-image">
+            <div class="gallery-overlay">
+              <button class="view-image-btn">View Larger</button>
+              <button class="add-to-cart-btn" data-product="seasonal-pastry">Add to Cart</button>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3>Holiday Pastries</h3>
+            <p>Special seasonal pastries available during holidays</p>
+            <div class="gallery-meta">
+              <span class="category-tag seasonal-tag">Seasonal</span>
+              <span class="price">R55</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- LOAD MORE BUTTON -->
+      <div class="gallery-load-more">
+        <button class="btn primary-btn load-more-btn">Load More Images</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY CTA -->
+  <section class="gallery-cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Inspired by Our Creations?</h2>
+        <p>Visit our bakery to taste these delicious treats or place a custom order for your next celebration</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn primary-btn">Place an Order</a>
+          <a href="menu.html" class="btn secondary-btn">View Full Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Klip & Crust Bakery</h3>
+        <p>Fresh artisan baked goods made daily in Polokwane</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+          <a href="#" class="social-link facebook">Facebook</a>
+          <a href="#" class="social-link instagram">Instagram</a>
+          <a href="#" class="social-link whatsapp">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Klip & Crust Bakery | Follow us on 
+        <a href="#">Facebook</a> | <a href="#">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <div class="lightbox-navigation">
+      <button class="lightbox-prev">&#10094;</button>
+      <button class="lightbox-next">&#10095;</button>
+    </div>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption">
+      <h3 id="lightbox-title"></h3>
+      <p id="lightbox-description"></p>
+      <div class="lightbox-meta">
+        <span id="lightbox-category"></span>
+        <span id="lightbox-price"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CUSTOM ORDER MODAL -->
+  <div id="custom-order-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Custom Order Request</h3>
+      <form class="custom-order-form">
+        <div class="form-group">
+          <label for="custom-product">Product</label>
+          <input type="text" id="custom-product" readonly>
+        </div>
+        <div class="form-group">
+          <label for="custom-name">Your Name *</label>
+          <input type="text" id="custom-name" required>
+          <span class="error-message name-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="custom-email">Email Address *</label>
+          <input type="email" id="custom-email" required>
+          <span class="error-message email-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="custom-date">Required Date</label>
+          <input type="date" id="custom-date">
+        </div>
+        <div class="form-group">
+          <label for="custom-details">Special Requirements</label>
+          <textarea id="custom-details" rows="4" placeholder="Tell us about your custom order requirements..."></textarea>
+        </div>
+        <button type="submit" class="btn primary-btn">Submit Custom Order</button>
+      </form>
+    </div>
+  </div>
+  <script src="/Assets/index.js"></script>
+
+</body>
+</html>

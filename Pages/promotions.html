@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <title>Promotions & Special Offers | Klip & Crust Bakery</title>
+  <meta name="description" content="Discover current promotions, seasonal offers, and special discounts at Klip & Crust Bakery in Polokwane. Save on artisan breads, pastries, and combos.">
+  <meta name="keywords" content="bakery promotions, special offers, seasonal discounts, bakery deals, Klip & Crust sales">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">Klip <span>&</span> Crust</div>
+    <div class="menu-toggle">&#9776;</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Pages/menu.html">Menu</a></li>
+        <li><a href="../Pages/gallery.html">Gallery</a></li>
+        <li><a href="../Pages/about.html">About Us</a></li>
+        <li><a href="../Pages/promotions.html" class="active">Promotions</a></li>
+        <li><a href="../Pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PROMOTIONS HERO -->
+  <section class="page-hero promotions-hero">
+    <div class="hero-content">
+      <h1>Special Offers & Promotions</h1>
+      <p>Discover amazing deals, seasonal specials, and exclusive discounts on our artisan baked goods</p>
+    </div>
+  </section>
+
+  <!-- PROMOTIONS FILTER -->
+  <section class="promotions-filter">
+    <div class="container">
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All Offers</button>
+        <button class="filter-tab" data-filter="seasonal">Seasonal</button>
+        <button class="filter-tab" data-filter="combo">Combo Deals</button>
+        <button class="filter-tab" data-filter="bulk">Bulk Orders</button>
+        <button class="filter-tab" data-filter="limited">Limited Time</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRENT PROMOTIONS -->
+  <section class="current-promotions">
+    <div class="container">
+      <h2>Current Promotions</h2>
+      <p class="section-subtitle">Don't miss out on these exclusive deals and seasonal specialties</p>
+      
+      <div class="promotions-grid">
+        
+        <!-- Winter Combo Deal -->
+        <div class="promotion-card" data-category="seasonal combo" data-expiry="2025-08-31">
+          <div class="promotion-badge seasonal-badge">Seasonal</div>
+          <div class="promotion-img">
+            <img src="/Assets/images/winter-combo.jpg" alt="Winter Combo - Hot Chocolate and Croissant" class="gallery-image">
+          </div>
+          <div class="promotion-content">
+            <h3 class="promotion-title">Winter Warmth Combo</h3>
+            <p class="promotion-description">Perfect for chilly mornings - enjoy a warm buttery croissant with our rich hot chocolate</p>
+            <div class="promotion-details">
+              <div class="original-price">R55</div>
+              <div class="promotion-price">R30</div>
+              <div class="discount-badge">45% OFF</div>
+            </div>
+            <div class="promotion-meta">
+              <span class="availability-tag">Available May–August</span>
+              <span class="validity">Valid until: 31 Aug 2025</span>
+            </div>
+            <div class="promotion-actions">
+              <button class="btn primary-btn add-to-cart-promo" data-promo="winter-combo">Add to Cart</button>
+              <button class="btn secondary-btn view-details-btn">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bulk Order Discount -->
+        <div class="promotion-card" data-category="bulk" data-expiry="2025-12-31">
+          <div class="promotion-badge bulk-badge">Bulk Order</div>
+          <div class="promotion-img">
+            <img src="/Assets/images/bulk-bread.jpg" alt="Bulk Bread Order Discount" class="gallery-image">
+          </div>
+          <div class="promotion-content">
+            <h3 class="promotion-title">Bulk Bread Discount</h3>
+            <p class="promotion-description">Perfect for offices, events, or large families. Order 10+ loaves and save</p>
+            <div class="promotion-details">
+              <div class="original-price">Full Price</div>
+              <div class="promotion-price">10% OFF</div>
+              <div class="discount-badge">SAVE 10%</div>
+            </div>
+            <div class="promotion-meta">
+              <span class="availability-tag">All Bread Varieties</span>
+              <span class="validity">Year-round offer</span>
+            </div>
+            <div class="promotion-actions">
+              <button class="btn primary-btn contact-for-bulk" data-promo="bulk-bread">Contact for Quote</button>
+              <button class="btn secondary-btn view-details-btn">Terms</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seasonal Fruit Tarts -->
+        <div class="promotion-card" data-category="seasonal limited" data-expiry="2025-11-30">
+          <div class="promotion-badge limited-badge">Limited Batch</div>
+          <div class="promotion-img">
+            <img src="/Assets/images/seasonal-tarts.jpg" alt="Seasonal Fruit Tarts" class="gallery-image">
+          </div>
+          <div class="promotion-content">
+            <h3 class="promotion-title">Seasonal Fruit Tarts</h3>
+            <p class="promotion-description">Handcrafted tarts featuring fresh seasonal fruits. Limited availability during peak season</p>
+            <div class="promotion-details">
+              <div class="original-price">R65</div>
+              <div class="promotion-price">R55</div>
+              <div class="discount-badge">15% OFF</div>
+            </div>
+            <div class="promotion-meta">
+              <span class="availability-tag">Fruit Season Only</span>
+              <span class="validity">While stocks last</span>
+            </div>
+            <div class="promotion-actions">
+              <button class="btn primary-btn pre-order-btn" data-promo="seasonal-tarts">Pre-order Now</button>
+              <button class="btn secondary-btn view-details-btn">Season Info</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Breakfast Combo -->
+        <div class="promotion-card" data-category="combo" data-expiry="2025-12-31">
+          <div class="promotion-badge combo-badge">Daily Deal</div>
+          <div class="promotion-img">
+            <img src="/Assets/images/breakfast-combo.jpg" alt="Breakfast Combo Deal" class="gallery-image">
+          </div>
+          <div class="promotion-content">
+            <h3 class="promotion-title">Morning Starter Combo</h3>
+            <p class="promotion-description">Your perfect morning routine: Fresh pastry + artisan coffee at a special price</p>
+            <div class="promotion-details">
+              <div class="original-price">R53</div>
+              <div class="promotion-price">R40</div>
+              <div class="discount-badge">25% OFF</div>
+            </div>
+            <div class="promotion-meta">
+              <span class="availability-tag">7:00 AM - 10:00 AM</span>
+              <span class="validity">Daily offer</span>
+            </div>
+            <div class="promotion-actions">
+              <button class="btn primary-btn add-to-cart-promo" data-promo="breakfast-combo">Add to Cart</button>
+              <button class="btn secondary-btn view-details-btn">Menu</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Family Bundle -->
+        <div class="promotion-card" data-category="combo bulk" data-expiry="2025-10-31">
+          <div class="promotion-badge family-badge">Family Favorite</div>
+          <div class="promotion-img">
+            <img src="/Assets/images/family-bundle.jpg" alt="Family Bread Bundle" class="gallery-image">
+          </div>
+          <div class="promotion-content">
+            <h3 class="promotion-title">Family Bread Bundle</h3>
+            <p class="promotion-description">Mix & match 3 different breads and save. Perfect for trying new varieties</p>
+            <div class="promotion-details">
+              <div class="original-price">R135</div>
+              <div class="promotion-price">R110</div>
+              <div class="discount-badge">18% OFF</div>
+            </div>
+            <div class="promotion-meta">
+              <span class="availability-tag">All Bread Types</span>
+              <span class="validity">Until 31 Oct 2025</span>
+            </div>
+            <div class="promotion-actions">
+              <button class="btn primary-btn customize-bundle-btn" data-promo="family-bundle">Customize Bundle</button>
+              <button class="btn secondary-btn view-details-btn">Options</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cake of the Month -->
+        <div class="promotion-card" data-category="seasonal limited" data-expiry="2025-07-31">
+          <div class="promotion-badge monthly-badge">Monthly Special</div>
+          <div class="promotion-img">
+            <img src="/Assets/images/cake-month.jpg" alt="Cake of the Month Special" class="gallery-image">
+          </div>
+          <div class="promotion-content">
+            <h3 class="promotion-title">Cake of the Month</h3>
+            <p class="promotion-description">Each month features a different signature cake at a special promotional price</p>
+            <div class="promotion-details">
+              <div class="original-price">R320</div>
+              <div class="promotion-price">R260</div>
+              <div class="discount-badge">19% OFF</div>
+            </div>
+            <div class="promotion-meta">
+              <span class="availability-tag">July: Red Velvet</span>
+              <span class="validity">Limited to July 2025</span>
+            </div>
+            <div class="promotion-actions">
+              <button class="btn primary-btn order-cake-month" data-promo="cake-month">Order This Month</button>
+              <button class="btn secondary-btn view-details-btn">Next Month</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- UPCOMING PROMOTIONS -->
+  <section class="upcoming-promotions">
+    <div class="container">
+      <h2>Coming Soon</h2>
+      <p class="section-subtitle">Get ready for these exciting promotions launching soon</p>
+      
+      <div class="upcoming-grid">
+        <div class="upcoming-card">
+          <div class="upcoming-badge">Starting August</div>
+          <h3>Back to School Bundle</h3>
+          <p>Special lunchbox-friendly treats and snack packs for students</p>
+          <div class="countdown-timer" data-launch="2025-08-01">
+            <div class="timer-unit">
+              <span class="timer-number">30</span>
+              <span class="timer-label">Days</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="upcoming-card">
+          <div class="upcoming-badge">September Launch</div>
+          <h3>Heritage Day Special</h3>
+          <p>Traditional South African baked goods and braai breads</p>
+          <div class="countdown-timer" data-launch="2025-09-01">
+            <div class="timer-unit">
+              <span class="timer-number">61</span>
+              <span class="timer-label">Days</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="upcoming-card">
+          <div class="upcoming-badge">Holiday Season</div>
+          <h3>Festive Treats Collection</h3>
+          <p>Special holiday pastries, cakes, and gift boxes for Christmas</p>
+          <div class="countdown-timer" data-launch="2025-11-15">
+            <div class="timer-unit">
+              <span class="timer-number">136</span>
+              <span class="timer-label">Days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REDEMPTION INFORMATION -->
+  <section class="redemption-info">
+    <div class="container">
+      <div class="redemption-content">
+        <h2>How to Redeem Promotions</h2>
+        <div class="redemption-steps">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Choose Your Promotion</h3>
+            <p>Browse our current offers and select the promotion you'd like to redeem</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Visit Our Bakery</h3>
+            <p>All promotions are redeemable in-store at our Polokwane location</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Mention the Offer</h3>
+            <p>Let our staff know which promotion you'd like to use when ordering</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <h3>Enjoy Your Savings</h3>
+            <p>Sit back and enjoy your delicious baked goods at special promotional prices</p>
+          </div>
+        </div>
+
+        <div class="terms-conditions">
+          <h3>Terms & Conditions</h3>
+          <div class="terms-content">
+            <ul>
+              <li>Promotions cannot be combined with other offers</li>
+              <li>Seasonal offers are available only during specified dates</li>
+              <li>Bulk orders require 48 hours advance notice</li>
+              <li>Limited time offers are subject to availability</li>
+              <li>Custom cake orders excluded from general promotions</li>
+              <li>Management reserves the right to modify or cancel promotions</li>
+            </ul>
+            <div class="contact-redemption">
+              <p><strong>Questions?</strong> Contact us for more information about our promotions:</p>
+              <a href="./contact.html" class="btn primary-btn">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMOTIONS CTA -->
+  <section class="promotions-cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Don't Miss Out on These Amazing Deals!</h2>
+        <p>Visit us today to enjoy these special promotions and discover why we're Polokwane's favorite artisan bakery</p>
+        <div class="cta-buttons">
+          <a href="./contact.html" class="btn primary-btn">Get Directions</a>
+          <a href="./menu.html" class="btn secondary-btn">View Full Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Klip & Crust Bakery</h3>
+        <p>Fresh artisan baked goods made daily in Polokwane</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./about.html">Our Story</a></li>
+          <li><a href="./promotions.html">Promotions</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+          <a href="#" class="social-link facebook">Facebook</a>
+          <a href="#" class="social-link instagram">Instagram</a>
+          <a href="#" class="social-link whatsapp">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Klip & Crust Bakery | Follow us on 
+        <a href="#">Facebook</a> | <a href="#">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- PROMOTION DETAILS MODAL -->
+  <div id="promotion-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-promotion-content">
+        <div class="modal-promotion-img">
+          <img id="modal-promotion-image" src="" alt="">
+        </div>
+        <div class="modal-promotion-details">
+          <h3 id="modal-promotion-title"></h3>
+          <p id="modal-promotion-description"></p>
+          <div class="modal-pricing">
+            <div class="original-price" id="modal-original-price"></div>
+            <div class="promotion-price" id="modal-promotion-price"></div>
+            <div class="discount-badge" id="modal-discount-badge"></div>
+          </div>
+          <div class="modal-meta">
+            <div class="meta-item">
+              <strong>Valid Until:</strong>
+              <span id="modal-validity"></span>
+            </div>
+            <div class="meta-item">
+              <strong>Availability:</strong>
+              <span id="modal-availability"></span>
+            </div>
+          </div>
+          <div class="modal-terms">
+            <h4>Terms & Conditions</h4>
+            <p id="modal-terms"></p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn primary-btn" id="modal-redeem-btn">Redeem Offer</button>
+            <button class="btn secondary-btn close-modal-btn">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JavaScript -->
+   <script src="/Assets/index.js"></script>
+</body>
+</html>

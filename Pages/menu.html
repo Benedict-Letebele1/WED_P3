@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <title>Menu | Klip & Crust Bakery - Artisan Breads, Pastries & Cakes</title>
+  <meta name="description" content="Explore our full menu of artisan baked goods. Fresh breads, pastries, cakes, and seasonal specialties from Klip & Crust Bakery in Polokwane.">
+  <meta name="keywords" content="bakery menu, artisan bread prices, pastry menu, cake prices, Klip & Crust menu">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">Klip <span>&</span> Crust</div>
+    <div class="menu-toggle">&#9776;</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Pages/menu.html" class="active">Menu</a></li>
+        <li><a href="../Pages/gallery.html">Gallery</a></li>
+        <li><a href="../Pages/about.html">About Us</a></li>
+        <li><a href="../Pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MENU HERO -->
+  <section class="page-hero menu-hero">
+    <div class="hero-content">
+      <h1>Our Artisan Creations</h1>
+      <p>Discover our full selection of freshly baked breads, pastries, cakes, and seasonal specialties</p>
+    </div>
+  </section>
+
+  <!-- MENU CONTROLS -->
+  <section class="menu-controls">
+    <div class="container">
+      <div class="controls-container">
+        <div class="menu-search">
+          <input type="text" class="search-menu-input" placeholder="Search menu items...">
+          <button class="search-menu-btn">Search</button>
+        </div>
+        <div class="menu-filters">
+          <button class="filter-btn active" data-filter="all">All Items</button>
+          <button class="filter-btn" data-filter="breads">Breads</button>
+          <button class="filter-btn" data-filter="pastries">Pastries</button>
+          <button class="filter-btn" data-filter="cakes">Cakes</button>
+          <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+          <button class="filter-btn" data-filter="beverages">Beverages</button>
+        </div>
+        <div class="menu-sort">
+          <select class="sort-menu-select">
+            <option value="popular">Sort by: Popular</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="name">Name: A to Z</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU CONTAINER -->
+  <section class="menu-container">
+    <div class="container">
+      
+      <!-- BREADS SECTION -->
+      <div class="menu-category-section" data-category="breads">
+        <div class="category-header">
+          <h2 class="category-title">Artisan Breads</h2>
+          <p class="category-description">Freshly baked daily using traditional methods and local ingredients</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card" data-category="breads" data-price="45" data-popular="true">
+            <div class="menu-img">
+              <img src="/Assets/images/Sourdough loaf.jpg" alt="Artisan Sourdough Loaf with crispy crust" class="gallery-image">
+              <div class="popular-badge">Popular</div>
+            </div>
+            <div class="menu-content">
+              <h3 class="item-name">Sourdough Loaf</h3>
+              <p class="item-description">A crusty, golden loaf made from locally sourced flour and natural starter. Perfect with soups or as toast.</p>
+              <div class="item-details">
+                <span class="dietary-tag">Vegan</span>
+                <span class="dietary-tag">No Preservatives</span>
+              </div>
+              <div class="item-footer">
+                <span class="price">R45</span>
+                <button class="btn add-to-cart-btn" data-product="sourdough-loaf">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="breads" data-price="40">
+            <div class="menu-img">
+              <img src="/Assets/images/Wholewheat bread.webp" alt="Healthy Whole Wheat Bread" class="gallery-image">
+            </div>
+            <div class="menu-content">
+              <h3 class="item-name">Whole Wheat Bread</h3>
+              <p class="item-description">Rich, nutty flavor with a soft, fluffy interior perfect for sandwiches and breakfast toast.</p>
+              <div class="item-details">
+                <span class="dietary-tag">Whole Grain</span>
+                <span class="dietary-tag">High Fiber</span>
+              </div>
+              <div class="item-footer">
+                <span class="price">R40</span>
+                <button class="btn add-to-cart-btn" data-product="wholewheat-bread">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="breads" data-price="35" data-popular="true">
+            <div class="menu-img">
+              <img src="/Assets/images/Baguette.jpg" alt="Traditional French Baguette" class="gallery-image">
+              <div class="popular-badge">Popular</div>
+            </div>
+            <div class="menu-content">
+              <h3 class="item-name">French Baguette</h3>
+              <p class="item-description">Traditional French baguette with crispy crust and soft interior. Perfect for sandwiches or with cheese.</p>
+              <div class="item-details">
+                <span class="dietary-tag">Vegan</span>
+                <span class="dietary-tag">Traditional</span>
+              </div>
+              <div class="item-footer">
+                <span class="price">R35</span>
+                <button class="btn add-to-cart-btn" data-product="french-baguette">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="breads" data-price="38">
+            <div class="menu-img">
+              <img src="/Assets/images/Rye bread.jpg" alt="Dark Rye Bread with seeds" class="gallery-image">
+            </div>
+            <div class="menu-content">
+              <h3 class="item-name">Rye Bread</h3>
+              <p class="item-description">Hearty dark rye bread with caraway seeds and molasses. Dense texture with rich flavor.</p>
+              <div class="item-details">
+                <span class="dietary-tag">Whole Grain</span>
+                <span class="dietary-tag">Seeded</span>
+              </div>
+              <div class="item-footer">
+                <span class="price">R38</span>
+                <button class="btn add-to-cart-btn" data-product="rye-bread">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PASTRIES SECTION -->
+      <div class="menu-category-section" data-category="pastries">
+        <div class="category-header">
+          <h2 class="category-title">Pastries & Morning Treats</h2>
+          <p class="category-description">Flaky, buttery pastries perfect with your morning coffee or as an afternoon treat</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card" data-category="pastries" data-price="25" data-popular="true">
+            <div class="menu-img">
+              <img src="/Assets/images/Blueberry muffin.webp" alt="Fresh Blueberry Muffins" class="gallery-image">
+              <div class="popular-badge">Popular</div>
+            </div>
+            <div class="menu-content">
+              <h3 class="item-name">Blueberry Muffin</h3>
+              <p class="item-description">Moist and fluffy muffin loaded with fresh blueberries and topped with sugar crust.</p>
+              <div class="item-details">
+                <span class="dietary-tag">Fruit</span>
+                <span class="dietary-tag">Vegetarian</span>
+              </div>
+              <div class="item-footer">
+                <span class="price">R25</span>
+                <button class="btn add-to-cart-btn" data-product="blueberry-muffin">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="pastries" data-price="28" data-popular="true">
+            <div class="menu-img">
+              <img src="/Assets/images/Croissant.jpg" alt="Buttery French Croissant" class="gallery-image">
+              <div class="popular-badge">Popular</div>
+            </div>
+            <div class="menu-content">
+              <h3 class="item-name">Butter Croissant</h3>
+              <p class="item-description">Buttery and flaky, baked fresh every morning using traditional French techniques.</p>
+              <div class="item-details">
+                <span class="dietary-tag">Buttery</span>
+                <span class="dietary-tag">Flaky</span>
+              </div>
+              <div class="item-footer">
+                <span class="price">R28</span>
+                <button class="btn add-to-cart-btn" data-product="butter-croissant">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="pastries" data-price="32">
+            <div class="menu-img">
+              <img src="/Assets/images/Chocolate croissant.jpg" alt="Chocolate Filled Croissant" class="gallery-image">
+            </div>
+            <div class="menu-content">
+              <h3 class="item-name">Chocolate Croissant</h3>
+              <p class="item-description">Flaky croissant filled with rich dark chocolate. A perfect sweet breakfast or dessert.</p>
+              <div class="item-details">
+                <span class="dietary-tag">Chocolate</span>
+                <span class="dietary-tag">Sweet</span>
+              </div>
+              <div class="item-footer">
+                <span class="price">R32</span>
+                <button class="btn add-to-cart-btn" data-product="chocolate-croissant">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="pastries" data-price="22">
+            <div class="menu-img">
+              <img src="/Assets/images/Cinnamon roll.jpg" alt="Fresh Cinnamon Rolls" class="gallery-image">
+            </div>
+            <div class="menu-content">
+              <h3 class="item-name">Cinnamon Roll</h3>
+              <p class="item-description">Soft, fluffy rolls swirled with cinnamon sugar and topped with cream cheese icing.</p>
+              <div class="item-details">
+                <span class="dietary-tag">Cinnamon</span>
+                <span class="dietary-tag">Sweet</span>
+              </div>
+              <div class="item-footer">
+                <span class="price">R22</span>
+                <button class="btn add-to-cart-btn" data-product="cinnamon-roll">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CAKES SECTION -->
+      <div class="menu-category-section" data-category="cakes">
+        <div class="category-header">
+          <h2 class="category-title">Celebration Cakes</h2>
+          <p class="category-description">Beautiful cakes for birthdays, anniversaries, and special occasions</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card" data-category="cakes" data-price="280" data-popular="true">
+            <div class="menu-img">
+              <img src="/Assets/images/Chocolate cake.jpg" alt="Decadent Chocolate Cake" class="gallery-image">
+              <div class="popular-badge">Popular</div>
+            </div>
+            <div class="menu-content">
+              <h3 class="item-name">Chocolate Celebration Cake</h3>
+              <p class="item-description">Rich and decadent chocolate cake layered with chocolate ganache and cream.</p>
+              <div class="item-details">
+                <span class="size-tag">Serves 8-10</span>
+                <span class="dietary-tag">Chocolate</span>
+              </div>
+              <div class="item-footer">
+                <span class="price">R280</span>
+                <button class="btn custom-order-btn" data-product="chocolate-cake">Custom Order</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="cakes" data-price="260">
+            <div class="menu-img">
+              <img src="/Assets/images/Crrot cake.jpg" alt="Moist Carrot Cake" class="gallery-image">
+            </div>
+            <div class="menu-content">
+              <h3 class="item-name">Carrot Cake</h3>
+              <p class="item-description">Moist cake with walnuts, carrots, and cream cheese frosting.</p>
+              <div class="item-details">
+                <span class="size-tag">Serves 8-10</span>
+                <span class="dietary-tag">Cream Cheese</span>
+              </div>
+              <div class="item-footer">
+                <span class="price">R260</span>
+                <button class="btn custom-order-btn" data-product="carrot-cake">Custom Order</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="cakes" data-price="320" data-popular="true">
+            <div class="menu-img">
+              <img src="/Assets/images/Red velvet cake.jpg" alt="Classic Red Velvet Cake" class="gallery-image">
+              <div class="popular-badge">Popular</div>
+            </div>
+            <div class="menu-content">
+              <h3 class="item-name">Red Velvet Cake</h3>
+              <p class="item-description">Classic red velvet with rich cream cheese frosting and decorative touches.</p>
+              <div class="item-details">
+                <span class="size-tag">Serves 10-12</span>
+                <span class="dietary-tag">Cream Cheese</span>
+              </div>
+              <div class="item-footer">
+                <span class="price">R320</span>
+                <button class="btn custom-order-btn" data-product="red-velvet-cake">Custom Order</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="cakes" data-price="300">
+            <div class="menu-img">
+              <img src="/Assets/images/wedding cake.jpg" alt="Elegant Wedding Cake" class="gallery-image">
+            </div>
+            <div class="menu-content">
+              <h3 class="item-name">Wedding Cake</h3>
+              <p class="item-description">Elegant multi-tier cake available in various flavors and designs for your special day.</p>
+              <div class="item-details">
+                <span class="size-tag">Custom Sizes</span>
+                <span class="dietary-tag">Customizable</span>
+              </div>
+              <div class="item-footer">
+                <span class="price">From R800</span>
+                <button class="btn custom-order-btn" data-product="wedding-cake">Custom Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEASONAL SECTION -->
+      <div class="menu-category-section" data-category="seasonal">
+        <div class="category-header">
+          <h2 class="category-title">Seasonal Specialties</h2>
+          <p class="category-description">Limited-time offerings featuring seasonal ingredients and holiday favorites</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card" data-category="seasonal" data-price="55">
+            <div class="menu-img">
+              <img src="/Assets/images/Seasonal pastry.jpg" alt="Seasonal Fruit Pastries" class="gallery-image">
+              <div class="seasonal-badge">Seasonal</div>
+            </div>
+            <div class="menu-content">
+              <h3 class="item-name">Seasonal Fruit Pastries</h3>
+              <p class="item-description">Flaky pastries filled with seasonal fruits - currently featuring summer berries.</p>
+              <div class="item-details">
+                <span class="dietary-tag">Fruit</span>
+                <span class="dietary-tag">Seasonal</span>
+              </div>
+              <div class="item-footer">
+                <span class="price">R55</span>
+                <button class="btn add-to-cart-btn" data-product="seasonal-pastry">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="seasonal" data-price="48">
+            <div class="menu-img">
+              <img src="/Assets/images/Pumpkin bread.jpg" alt="Seasonal Pumpkin Bread" class="gallery-image">
+              <div class="seasonal-badge">Autumn</div>
+            </div>
+            <div class="menu-content">
+              <h3 class="item-name">Pumpkin Spice Bread</h3>
+              <p class="item-description">Moist pumpkin bread with warm spices, perfect for autumn mornings.</p>
+              <div class="item-details">
+                <span class="dietary-tag">Spiced</span>
+                <span class="dietary-tag">Seasonal</span>
+              </div>
+              <div class="item-footer">
+                <span class="price">R48</span>
+                <button class="btn add-to-cart-btn" data-product="pumpkin-bread">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BEVERAGES SECTION -->
+      <div class="menu-category-section" data-category="beverages">
+        <div class="category-header">
+          <h2 class="category-title">Coffee & Beverages</h2>
+          <p class="category-description">Perfect pairings for our baked goods</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card" data-category="beverages" data-price="28">
+            <div class="menu-img">
+              <img src="/Assets/images/Coffee.jpg" alt="Freshly Brewed Coffee" class="gallery-image">
+            </div>
+            <div class="menu-content">
+              <h3 class="item-name">Artisan Coffee</h3>
+              <p class="item-description">Freshly brewed using locally roasted beans. Available in various sizes.</p>
+              <div class="item-details">
+                <span class="size-tag">Regular/Large</span>
+              </div>
+              <div class="item-footer">
+                <span class="price">From R28</span>
+                <button class="btn add-to-cart-btn" data-product="artisan-coffee">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="beverages" data-price="25">
+            <div class="menu-img">
+              <img src="/Assets/images/Tea.jpg" alt="Selection of Fine Teas" class="gallery-image">
+            </div>
+            <div class="menu-content">
+              <h3 class="item-name">Specialty Tea</h3>
+              <p class="item-description">Selection of fine teas including herbal, black, and green varieties.</p>
+              <div class="item-details">
+                <span class="size-tag">Various Types</span>
+              </div>
+              <div class="item-footer">
+                <span class="price">R25</span>
+                <button class="btn add-to-cart-btn" data-product="specialty-tea">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MENU CTA -->
+  <section class="menu-cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Order?</h2>
+        <p>Visit our bakery or contact us for custom orders and catering</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn primary-btn">Contact Us</a>
+          <a href="gallery.html" class="btn secondary-btn">View Gallery</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALLERGY INFORMATION -->
+  <section class="allergy-info">
+    <div class="container">
+      <div class="info-content">
+        <h3>Allergy Information</h3>
+        <p>We take food allergies seriously. Please inform our staff about any allergies or dietary restrictions. 
+           Many of our products contain gluten, dairy, eggs, and nuts. We offer some gluten-free and vegan options - 
+           please ask about availability.</p>
+        <button class="btn text-btn allergy-toggle-btn">View Detailed Allergy Information</button>
+        <div class="allergy-details" style="display: none;">
+          <div class="allergy-grid">
+            <div class="allergy-item">
+              <h4>Gluten-Free Options</h4>
+              <p>Available upon request with 24 hours notice</p>
+            </div>
+            <div class="allergy-item">
+              <h4>Vegan Options</h4>
+              <p>Several breads and some pastries available</p>
+            </div>
+            <div class="allergy-item">
+              <h4>Nut Allergies</h4>
+              <p>Many items prepared in facility that uses nuts</p>
+            </div>
+            <div class="allergy-item">
+              <h4>Dairy-Free</h4>
+              <p>Select breads available, please inquire</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Klip & Crust Bakery</h3>
+        <p>Fresh artisan baked goods made daily in Polokwane</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+          <a href="#" class="social-link facebook">Facebook</a>
+          <a href="#" class="social-link instagram">Instagram</a>
+          <a href="#" class="social-link whatsapp">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Klip & Crust Bakery | Follow us on 
+        <a href="#">Facebook</a> | <a href="#">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption"></div>
+  </div>
+
+  <!-- CUSTOM ORDER MODAL -->
+  <div id="custom-order-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Custom Order Request</h3>
+      <form class="custom-order-form">
+        <div class="form-group">
+          <label for="custom-product">Product</label>
+          <input type="text" id="custom-product" readonly>
+        </div>
+        <div class="form-group">
+          <label for="custom-name">Your Name *</label>
+          <input type="text" id="custom-name" required>
+          <span class="error-message name-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="custom-phone">Phone Number *</label>
+          <input type="tel" id="custom-phone" required>
+          <span class="error-message phone-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="custom-date">Required Date</label>
+          <input type="date" id="custom-date">
+        </div>
+        <div class="form-group">
+          <label for="custom-details">Special Requirements</label>
+          <textarea id="custom-details" rows="4" placeholder="Tell us about your custom order requirements..."></textarea>
+        </div>
+        <button type="submit" class="btn primary-btn">Submit Custom Order</button>
+      </form>
+    </div>
+  </div>
+  <script src="/Assets/index.js"></script>
+</body>
+</html>

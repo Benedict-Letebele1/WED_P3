@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <title>Klip & Crust Bakery | Artisan Breads & Pastries in Polokwane</title>
+  <meta name="description" content="Klip & Crust Bakery - Polokwane's premier artisan bakery. Fresh bread, pastries, cakes baked daily with local ingredients. Visit us for seasonal specials and custom orders.">
+  <meta name="keywords" content="artisan bakery Polokwane, fresh bread, pastries, cakes, custom baking, local bakery, Klip & Crust">
+  
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Leaflet CSS for Maps -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">Klip <span>&</span> Crust</div>
+    <div class="menu-toggle">&#9776;</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./Pages/menu.html">Menu</a></li>
+        <li><a href="./Pages/gallery.html">Gallery</a></li>
+        <li><a href="./Pages/about.html">About Us</a></li>
+        <li><a href="./Pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Fresh. Local. Baked with Love.</h1>
+      <p>Polokwane's favorite artisan bakery</p>
+      <div class="hero-actions">
+        <a href="menu.html" class="btn primary-btn">View Menu</a>
+        <a href="contact.html" class="btn secondary-btn">Order Now</a>
+      </div>
+    </div>
+    <!-- Background Image goes in CSS here -->
+  </section>
+
+  <!-- PROMOTIONS -->
+  <section class="promotions">
+    <div class="section-header">
+      <h2>Seasonal Promotions</h2>
+      <p class="section-subtitle">Discover our limited-time offers and seasonal favorites</p>
+    </div>
+    <div class="promo-grid">
+      <div class="promo-card" data-category="pastries" data-price="45">
+        <div class="promo-img">
+          <img src="/Assets/images/Blueberry muffin.webp" alt="Fresh Blueberry Muffins with seasonal discount" width="100%" height="100%" class="gallery-image">
+          <div class="promo-badge">20% OFF</div>
+        </div>
+        <h3>Spring Special</h3>
+        <p class="promo-description">Fresh blueberry muffins made with locally sourced berries</p>
+        <div class="price-container">
+          <span class="original-price">R56</span>
+          <span class="sale-price">R45</span>
+        </div>
+        <button class="btn add-to-cart-btn" data-product="blueberry-muffin">Add to Cart</button>
+      </div>
+      <div class="promo-card" data-category="bread" data-price="35">
+        <div class="promo-img">
+          <img src="/Assets/images/Baguette.jpg" alt="Fresh Artisan Baguette special offer" width="100%" height="100%" class="gallery-image">
+          <div class="promo-badge">BOGO</div>
+        </div>
+        <h3>Fresh Baguette</h3>
+        <p class="promo-description">Traditional French baguette baked fresh daily</p>
+        <div class="price-container">
+          <span class="sale-price">R35</span>
+          <span class="promo-text">Buy 1 Get 1 Free Friday</span>
+        </div>
+        <button class="btn add-to-cart-btn" data-product="baguette">Add to Cart</button>
+      </div>
+      <div class="promo-card" data-category="cakes" data-price="280">
+        <div class="promo-img">
+          <img src="/Assets/images/Chocolate cake.jpg" alt="Decadent Chocolate Celebration Cake" width="100%" height="100%" class="gallery-image">
+          <div class="promo-badge">Popular</div>
+        </div>
+        <h3>Chocolate Cake</h3>
+        <p class="promo-description">Rich chocolate cake perfect for celebrations</p>
+        <div class="price-container">
+          <span class="sale-price">R280</span>
+        </div>
+        <button class="btn add-to-cart-btn" data-product="chocolate-cake">Add to Cart</button>
+      </div>
+    </div>
+    <div class="promo-controls">
+      <button class="btn view-all-promos-btn">View All Promotions</button>
+    </div>
+  </section>
+
+  <!-- QUICK INFO BAR -->
+  <section class="quick-info">
+    <div class="info-item">
+      <div class="icon">⏰</div>
+      <div class="info-content">
+        <h4>Opening Hours</h4>
+        <p>Mon - Sat: 7am - 6pm</p>
+        <p>Sunday: 8am - 2pm</p>
+        <button class="hours-toggle accordion-btn">Full Hours</button>
+        <div class="accordion-content">
+          <div class="hours-detail">
+            <span>Monday - Friday</span>
+            <span>7:00 AM - 6:00 PM</span>
+          </div>
+          <div class="hours-detail">
+            <span>Saturday</span>
+            <span>7:00 AM - 4:00 PM</span>
+          </div>
+          <div class="hours-detail">
+            <span>Sunday</span>
+            <span>8:00 AM - 2:00 PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info-item">
+      <div class="icon">📍</div>
+      <div class="info-content">
+        <h4>Location</h4>
+        <p>Polokwane, South Africa</p>
+        <button class="btn map-toggle-btn">View Map</button>
+      </div>
+    </div>
+    <div class="info-item">
+      <div class="icon">📞</div>
+      <div class="info-content">
+        <h4>Contact Us</h4>
+        <p>+27 12 345 6789</p>
+        <button class="btn contact-toggle-btn">Quick Contact</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="featured-products">
+    <div class="section-header">
+      <h2>Customer Favorites</h2>
+      <p class="section-subtitle">Our most loved baked goods</p>
+    </div>
+    <div class="products-grid">
+      <div class="product-card" data-category="bread" data-price="42">
+        <div class="product-img">
+          <img src="/Assets/images/Sourdough bread.jpg" alt="Artisan Sourdough Bread" class="gallery-image">
+        </div>
+        <h3>Artisan Sourdough</h3>
+        <p class="product-description">Traditional sourdough with crispy crust</p>
+        <div class="price">R42</div>
+        <button class="btn add-to-cart-btn" data-product="sourdough">Add to Cart</button>
+      </div>
+      <div class="product-card" data-category="pastries" data-price="28">
+        <div class="product-img">
+          <img src="/Assets/images/Croissant.jpg" alt="Buttery French Croissant" class="gallery-image">
+        </div>
+        <h3>Butter Croissant</h3>
+        <p class="product-description">Flaky, buttery classic French croissant</p>
+        <div class="price">R28</div>
+        <button class="btn add-to-cart-btn" data-product="croissant">Add to Cart</button>
+      </div>
+      <div class="product-card" data-category="cakes" data-price="320">
+        <div class="product-img">
+          <img src="/Assets/images/Red velvet cake.jpg" alt="Classic Red Velvet Cake" class="gallery-image">
+        </div>
+        <h3>Red Velvet Cake</h3>
+        <p class="product-description">Moist red velvet with cream cheese frosting</p>
+        <div class="price">R320</div>
+        <button class="btn add-to-cart-btn" data-product="red-velvet">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SIGNUP -->
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <h2>Get Fresh Updates</h2>
+      <p>Subscribe to our newsletter for new product announcements and exclusive offers</p>
+      <form class="newsletter-form">
+        <div class="form-group">
+          <input type="email" class="newsletter-input" placeholder="Your email address" required>
+          <span class="error-message email-error"></span>
+        </div>
+        <button type="submit" class="btn newsletter-btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- MAP SECTION -->
+  <section class="location-map">
+    <h2>Visit Our Bakery</h2>
+    <div id="bakery-map" style="height: 400px; width: 100%;"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Klip & Crust Bakery</h3>
+        <p>Fresh artisan baked goods made daily in Polokwane</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+          <a href="#" class="social-link facebook">Facebook</a>
+          <a href="#" class="social-link instagram">Instagram</a>
+          <a href="#" class="social-link whatsapp">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Klip & Crust Bakery | Follow us on 
+        <a href="#">Facebook</a> | <a href="#">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption"></div>
+  </div>
+
+  <!-- QUICK CONTACT MODAL -->
+  <div id="contact-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Quick Contact</h3>
+      <form class="quick-contact-form">
+        <div class="form-group">
+          <label for="quick-name">Your Name</label>
+          <input type="text" id="quick-name" required>
+          <span class="error-message name-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="quick-phone">Phone Number</label>
+          <input type="tel" id="quick-phone" required>
+          <span class="error-message phone-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="quick-message">Message</label>
+          <textarea id="quick-message" rows="3" placeholder="How can we help you?"></textarea>
+        </div>
+        <button type="submit" class="btn submit-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/Assets/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <title>About Klip & Crust Bakery | Our Story, Mission & Artisan Bakers</title>
+  <meta name="description" content="Discover the story behind Klip & Crust Bakery. Meet our artisan bakers in Polokwane, learn about our values, and our commitment to quality baked goods.">
+  <meta name="keywords" content="Klip & Crust about, artisan bakery story, Polokwane bakers, bakery mission, local bakery values">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Leaflet CSS for Maps -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">Klip <span>&</span> Crust</div>
+    <div class="menu-toggle">&#9776;</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html" class="active">Home</a></li>
+        <li><a href="../Pages/menu.html">Menu</a></li>
+        <li><a href="../Pages/gallery.html">Gallery</a></li>
+        <li><a href="../Pages/about.html">About Us</a></li>
+        <li><a href="../Pages/contact.html">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ABOUT PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-content">
+      <h1>Our Story</h1>
+      <p>From a humble family kitchen to Polokwane's favorite artisan bakery</p>
+    </div>
+  </section>
+
+  <!-- ABOUT TABS NAVIGATION -->
+  <section class="about-tabs-nav">
+    <div class="container">
+      <div class="tabs-container">
+        <button class="tab-button active" data-tab="story">Our Story</button>
+        <button class="tab-button" data-tab="mission">Our Mission</button>
+        <button class="tab-button" data-tab="values">Our Values</button>
+        <button class="tab-button" data-tab="team">Meet The Team</button>
+        <button class="tab-button" data-tab="location">Our Location</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAB CONTENT SECTIONS -->
+  <section class="about-content">
+    <div class="container">
+      
+      <!-- OUR STORY TAB -->
+      <div id="story" class="tab-content active">
+        <div class="story-grid">
+          <div class="story-text">
+            <h2>From Humble Beginnings</h2>
+            <p>Klip & Crust Bakery began as a humble family project in the heart of Polokwane. Founded by the passionate baker Benny Letebele, our goal has always been simple: create artisan bread and pastries that bring warmth and joy to our local community.</p>
+            
+            <div class="story-accordion">
+              <button class="accordion-btn">The Early Days</button>
+              <div class="accordion-content">
+                <p>What started as a small kitchen operation in 2020 has grown into a beloved neighborhood bakery, where every loaf and cake is baked with care, precision, and a love for quality ingredients.</p>
+              </div>
+
+              <button class="accordion-btn">Local Sourcing</button>
+              <div class="accordion-content">
+                <p>We source all our ingredients locally whenever possible, supporting farmers and suppliers in our region. Our sourdoughs rise naturally, our pastries are layered with real butter, and our cakes are handcrafted to celebrate every occasion.</p>
+              </div>
+
+              <button class="accordion-btn">Recipe Development</button>
+              <div class="accordion-content">
+                <p>Each recipe is a blend of tradition and creativity, refined over years of experimentation and perfected to delight every customer who walks through our doors.</p>
+              </div>
+            </div>
+
+            <p>At Klip & Crust, we don't just bake food; we bake experiences. The aroma of freshly baked bread, the golden crust of a perfectly baked loaf, and the sweet indulgence of a chocolate croissant – every moment is designed to make our customers feel at home.</p>
+
+            <p>Our community-driven approach has made us a favorite spot for families, students, and professionals looking for quality baked goods in a friendly and welcoming environment.</p>
+          </div>
+          <div class="story-visual">
+            <div class="about-image">
+              <img src="/Assets/images/team.jpg" alt="Klip & Crust Bakery team working in the kitchen" class="gallery-image">
+            </div>
+            <div class="story-stats">
+              <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years Serving Polokwane</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Artisan Products</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Locally Sourced When Possible</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OUR MISSION TAB -->
+      <div id="mission" class="tab-content">
+        <div class="mission-content">
+          <h2>Our Mission & Vision</h2>
+          <div class="mission-statement">
+            <blockquote>
+              "Our mission is to craft fresh, delicious baked goods while fostering a sense of community and connection. We believe that food is a universal language of love, and through our bakery, we aim to bring people together, one loaf at a time."
+            </blockquote>
+          </div>
+          
+          <div class="mission-grid">
+            <div class="mission-item">
+              <div class="mission-icon">🌾</div>
+              <h3>Quality Ingredients</h3>
+              <p>Using the finest local ingredients to create exceptional baked goods that nourish both body and soul.</p>
+            </div>
+            <div class="mission-item">
+              <div class="mission-icon">🤝</div>
+              <h3>Community Focus</h3>
+              <p>Building strong relationships with our customers and supporting local farmers and suppliers.</p>
+            </div>
+            <div class="mission-item">
+              <div class="mission-icon">🍞</div>
+              <h3>Artisan Craft</h3>
+              <p>Preserving traditional baking methods while innovating with new flavors and techniques.</p>
+            </div>
+            <div class="mission-item">
+              <div class="mission-icon">🌍</div>
+              <h3>Sustainability</h3>
+              <p>Committing to environmentally responsible practices in all our bakery operations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OUR VALUES TAB -->
+      <div id="values" class="tab-content">
+        <div class="values-content">
+          <h2>Our Values & Philosophy</h2>
+          
+          <div class="values-accordion">
+            <button class="accordion-btn">Authenticity in Everything</button>
+            <div class="accordion-content">
+              <p>We believe in authenticity. Authentic flavors, authentic ingredients, and authentic baking methods. Our philosophy is simple: quality over quantity, freshness over mass production, and connection over transactions.</p>
+              <p>We strive to maintain a warm and inviting atmosphere where customers feel part of our extended family. Sustainability is also a core value, from sourcing ingredients responsibly to reducing waste in our bakery operations.</p>
+            </div>
+
+            <button class="accordion-btn">Innovation & Creativity</button>
+            <div class="accordion-content">
+              <p>Innovation is another pillar of our approach. While we honor traditional recipes and time-tested techniques, we constantly experiment with flavors, textures, and presentations to bring new and exciting experiences to our customers.</p>
+              <p>Seasonal specials, limited edition pastries, and creative cake designs are part of our effort to keep the bakery dynamic, inspiring, and delightful.</p>
+            </div>
+
+            <button class="accordion-btn">Community Connection</button>
+            <div class="accordion-content">
+              <p>We see ourselves as more than just a bakery - we're a community hub where relationships are built over coffee and croissants. Our team knows our regular customers by name and we take pride in being part of their daily routines and special celebrations.</p>
+            </div>
+
+            <button class="accordion-btn">Environmental Responsibility</button>
+            <div class="accordion-content">
+              <p>From composting food waste to using eco-friendly packaging, we're committed to minimizing our environmental impact. We partner with local farms for ingredients and donate unsold goods to community organizations whenever possible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MEET THE TEAM TAB -->
+      <div id="team" class="tab-content">
+        <div class="team-content">
+          <h2>Meet Our Artisan Bakers</h2>
+          <p class="team-intro">Our talented team of bakers and pastry chefs bring passion, skill, and creativity to every product we create.</p>
+          
+          <div class="baker-grid">
+            <div class="baker-card">
+              <div class="baker-img">
+                <img src="/Assets/images/Benny.jpg" alt="Benny Letebele - Founder & Head Baker at Klip & Crust Bakery" class="gallery-image">
+              </div>
+              <div class="baker-info">
+                <h3>Benny Letebele</h3>
+                <p class="baker-role">Founder & Head Baker</p>
+                <p class="baker-bio">Benny has been baking since childhood. Her passion for artisan bread and her dedication to the craft has made Klip & Crust a staple in Polokwane.</p>
+                <div class="baker-specialties">
+                  <span class="specialty-tag">Sourdough</span>
+                  <span class="specialty-tag">Artisan Breads</span>
+                  <span class="specialty-tag">Recipe Development</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="baker-card">
+              <div class="baker-img">
+                <img src="/Assets/images/jay.webp" alt="Jay Magongoa - Pastry Chef at Klip & Crust Bakery" class="gallery-image">
+              </div>
+              <div class="baker-info">
+                <h3>Jay Magongoa</h3>
+                <p class="baker-role">Pastry Chef</p>
+                <p class="baker-bio">Jay specializes in pastries and seasonal baked goods, bringing creativity and flair to our daily menu with intricate designs and flavors.</p>
+                <div class="baker-specialties">
+                  <span class="specialty-tag">French Pastries</span>
+                  <span class="specialty-tag">Seasonal Specials</span>
+                  <span class="specialty-tag">Decorative Arts</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="baker-card">
+              <div class="baker-img">
+                <img src="/Assets/images/mary.jpg" alt="Mary Smith - Cake Specialist at Klip & Crust Bakery" class="gallery-image">
+              </div>
+              <div class="baker-info">
+                <h3>Mary Smith</h3>
+                <p class="baker-role">Cake Specialist</p>
+                <p class="baker-bio">Mary crafts every cake with meticulous attention to detail, from classic chocolate creations to custom designs for special occasions.</p>
+                <div class="baker-specialties">
+                  <span class="specialty-tag">Custom Cakes</span>
+                  <span class="specialty-tag">Celebration Cakes</span>
+                  <span class="specialty-tag">Sugar Art</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOCATION TAB -->
+      <div id="location" class="tab-content">
+        <div class="location-content">
+          <h2>Our Bakery Location</h2>
+          <div class="location-info">
+            <div class="location-details">
+              <h3>Visit Us Today</h3>
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-text">
+                  <strong>Address</strong>
+                  <p>123 Bakery Street, Polokwane, South Africa</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">⏰</div>
+                <div class="contact-text">
+                  <strong>Opening Hours</strong>
+                  <p>Monday - Saturday: 7:00 AM - 6:00 PM</p>
+                  <p>Sunday: 8:00 AM - 2:00 PM</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-text">
+                  <strong>Phone</strong>
+                  <p>+27 12 345 6789</p>
+                </div>
+              </div>
+              <a href="contact.html" class="btn primary-btn">Get Directions</a>
+            </div>
+            <div class="location-map">
+              <div id="about-map" style="height: 400px; width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BAKERY TIMELINE -->
+  <section class="timeline-section">
+    <div class="container">
+      <h2>Our Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2020</div>
+          <div class="timeline-content">
+            <h3>Bakery Founded</h3>
+            <p>Klip & Crust began as a small home-based bakery serving local Polokwane community</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2021</div>
+          <div class="timeline-content">
+            <h3>First Storefront</h3>
+            <p>Opened our first physical location on Bakery Street with a team of three bakers</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2023</div>
+          <div class="timeline-content">
+            <h3>Expanded Team</h3>
+            <p>Grew to a team of six artisans and expanded our product range to 50+ items</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2025</div>
+          <div class="timeline-content">
+            <h3>Community Staple</h3>
+            <p>Became Polokwane's favorite artisan bakery, known for quality and community focus</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Klip & Crust Bakery</h3>
+        <p>Fresh artisan baked goods made daily in Polokwane</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+          <a href="#" class="social-link facebook">Facebook</a>
+          <a href="#" class="social-link instagram">Instagram</a>
+          <a href="#" class="social-link whatsapp">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Klip & Crust Bakery | Follow us on 
+        <a href="#">Facebook</a> | <a href="#">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption"></div>
+  </div>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/Assets/index.js"></script>
+
+</body>
+</html>
